@@ -163,4 +163,4 @@ cython_debug/
 .idea/
 
 # Custom
-data/ASD_Release_202306_XF
+data/
