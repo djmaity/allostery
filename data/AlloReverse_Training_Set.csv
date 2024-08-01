@@ -1,0 +1,183 @@
+﻿Name of Protein,Uniprot ID ,PDB ID (PDB:Chain(s)) ,Orthosteric Ligand (PDB:Chain:Residue Name: Residue ID) ,Allosteric Ligand(s) (PDB:Chain:Residue Name: Residue ID) 
+Pyruvate kinase 1  ,P00549 ,1A3W:A ,1A3W:A:PGA:1005 ,1A3W:A:FBP:1007 
+Ribose-phosphate pyrophosphokinase  ,P14193 ,1DKU:AB ,1DKU:A:ABM:1003 ,1DKU:A:AP2:1002; 1DKU:B:AP2:1001 
+"Fructose-1,6-bisphosphatase 1  ",P09467 ,1FBP:A ,1FBP:A:F6P:336 ,2JJK:A:R15:1336; 
+,,,,1FRP:A:AMP:338; 
+,,,,1KZ8:A:PFE:738 
+Glucose-1-phosphate thymidylyltransferase ,O27819 ,1G2V:A ,1G2V:A:TTP:3500 ,1LVW:A:TYD:3002 
+Glucose-1-phosphate thymidylyltransferase 1  ,P37744 ,1H5R:A ,1H5R:A:G1P:1294 ,1H5S:A:TMP:1292 
+"Glutamate dehydrogenase 1, mitochondrial  ",P00366 ,1HWY:F ,1HWY:F:NAD:507 ,1HWY:B:NAD:507; 1HWY:F:NAD:508 
+Sulfate adenylyltransferase  ,Q12650 ,1I2D:A ,1I2D:A:ADX:574 ,1M8P:A:PPS:574 
+Uracil phosphoribosyltransferase  ,Q26998 ,1JLS:B ,1JLS:B:PRP:301 ,1JLR:A:GTP:303 
+Insulin-like growth factor 1 receptor  ,P08069 ,1JQH:A ,1JQH:A:ANP:301 ,3LW0:A:CCX:1 
+Phosphoenolpyruvate carboxylase  ,P00864 ,1JQN:A ,1JQN:A:DCO:901 ,1FIY:A:ASP:884 
+Glucosamine-6-phosphate isomerase 1  ,P46926 ,1NE7:AB ,1NE7:A:AGP:2298 ,1NE7:B:16G:2299 
+Kinesin-like protein KIF11  ,P52732 ,1Q0B:A ,1Q0B:A:ADP:601 ,3ZCW:A:4A2:1366; 4BBG:A:V02:1370 
+Aspartate carbamoyltransferase regulatory chain ,P0A7F3 ,1Q95:AG ,1Q95:A:PAL:1001 ,4FYY:B:UTP:202; 
+,,,,4FYY:B:CTP:203; 
+,,,,4FYY:B:MG:204 
+2-dehydro-3deoxyphosphoheptonate aldolase  ,Q9WYH8 ,4GRS:AC ,1RZM:A:PEP:8002; 1RZM:A:E4P:8003 ,4GRS:A:TYR:401; 4GRS:A:TYR:402 
+Carbamoyl-phosphate synthase large chain  ,P00968 ,1T36:A ,1T36:A:ADP:1088; 1T36:A:ADP:5007 ,1T36:A:ORN:1089; 1CE8:A:IMP:5012 
+Mitogen-activated protein kinase 8  ,P45983 ,1UKI:AB ,1UKI:A:537:0 ,3O2M:A:46A:701 
+Response regulator PleD  ,B8GZM2 ,1W25:A ,1W25:A:C2E:501 ,1W25:A:C2E:503; 1W25:A:C2E:505 
+Farnesyl pyrophosphate synthase  ,P14324 ,1YQ7:A ,1YQ7:A:RIS:901 ,3N1V:F:3N1:1 
+Acetylglutamate kinase  ,Q9X2A4 ,2BTY:A ,2BTY:A:NLG:1284 ,2BTY:A:ARG:1283 
+Serum albumin ,P02768 ,2BXG:A ,2BXG:A:IBP:2001 ,2BXA:A:C1F:2001; 3LU6:A:IMX:587 
+"Threonine synthase 1, chloroplastic ",Q9S7B5 ,2C2B:AB ,2C2B:A:PLP:1163 ,2C2B:A:SAM:500; 
+,,,,2C2B:A:SAM:501; 
+,,,,2C2B:B:SAM:500; 
+,,,,2C2B:B:SAM:501 
+"Aspartokinase 1, chloroplastic ",Q9LYU8 ,2CDQ:A ,2CDQ:A:LYS:600 ,2CDQ:A:SAM:1500
+Tyrosine-protein phosphatase nonreceptor type 5 ,P54829 ,2CJZ:A ,2CJZ:A:PTR:1537 ,6H8S:A:FSZ:601 
+Serine/threonine-protein kinase Chk1,O14757,2E9N:A,2E9N:A:76A:1001,3F9N:A:38M:324
+"Glycogen phosphorylase, muscle form  ",P00489 ,2IEG:A ,2IEG:A:PLR:903 ,2IEG:A:FRY:901 
+Focal adhesion kinase 1  ,Q05397 ,4EBW:A ,2IJM:A:ATP:690 ,4EBW:A:0PF:700 
+Hepatitis C virus NS5B polymerase ,Q99AU2 ,2IJN:A ,2IJN:A:221:9366 ,2HAI:A:PFI:601 
+Lysine-sensitive aspartokinase 3  ,P08660 ,2J0X:AB ,2J0W:A:ADP:820 ,2J0X:A:LYS:1451; 2J0X:B:LYS:1450 
+Myosin-2 heavy chain  ,P08799 ,2JHR:A ,2JHR:A:AD9:1778 ,2JHR:A:PBQ:1780; 3BZ7:A:BL4:800 
+DNA-directed RNA polymerase subunit beta  ,Q8RQE9 ,2O5J:ABCDE ,2O5J:D:APC:3999 ,2A69:C:RPT:8001 
+UDP-glucose pyrophosphorylase ,Q4QDU3 ,2OEG:A ,2OEG:A:UPG:5206 ,5NZM:A:9ET:601 
+S-adenosylmethionine synthase isoform type-2 ,P31153 ,5UGH:AC ,2P02:A:SAM:2 ,5UGH:A:8AJ:401 
+KSHV protease ,O36607 ,2PBK:A ,2PBK:D:ACE:1; ,4P2T:A:24Q:201 
+,,,2PBK:D:PRO:2; ,
+,,,2PBK:D:VAL:3; ,
+,,,2PBK:D:TYR:4; ,
+,,,2PBK:D:TBG:5; ,
+,,,2PBK:D:GLN:6; ,
+,,,2PBK:D:GG7:7 ,
+Glutamine--fructose-6-phosphate aminotransferase ,P53704 ,2PUV:B ,2PUV:B:M6R:5004 ,2PUV:B:UD1:5003 
+Androgen receptor  ,P19091 ,2QPY:AB ,2QPY:A:DHT:931 ,2QPY:A:4HY:1 
+"Acetylglutamate kinase, chloroplastic  ",Q9SCL7 ,2RD5:A ,2RD5:A:ADP:2000 ,2RD5:A:ARG:1000 
+Pyruvate kinase PKLR  ,P30613 ,2VGB:A ,2VGB:A:PGA:581 ,2VGB:A:FBP:580 
+Glutamate racemase  ,Q836J0 ,2VVT:A ,2VVT:A:DGL:1270 ,2VVT:A:I24:1269 
+Glucosamine-6-phosphate deaminase  ,P0A759 ,2WU1:A ,2WU1:A:FGS:1268 ,2WU1:A:16G:1267 
+DNA gyrase subunit B ,P66937 ,2XCS:BD ,2XCS:F:RXV:1021 ,5NPK:B:94H:1502; 5NPK:D:94H:1503 
+Multifunctional 2-oxoglutarate metabolism enzyme  ,A0R2B1 ,2Y0P:A ,2Y0P:A:TD7:2001 ,2Y0P:A:ACO:2228 
+C-C chemokine receptor type 7 ,P62576 ,6QZH:A ,2YA7:A:ZMR:1776 ,6QZH:A:JLW:1502 
+Androgen receptor  ,P10275 ,2YHD:A ,2YHD:A:TES:1920 ,2YHD:A:AV6:1921 
+Pyruvate kinase PKM  ,P14618 ,3BJT:B ,3BJT:B:OXL:902 ,4B2D:A:SER:1532; 
+,,,,4G1N:A:NZT:603; 
+,,,,3H6O:A:FBP:541 
+Ribosomal protein S6 kinase alpha-3 ,P18654 ,3G51:A ,3G51:A:ANP:480 ,5O1S:A:9HB:802 
+RTX toxin RtxA ,Q9KS12 ,3GCD:A ,3GCD:A:AZ0:213 ,3GCD:A:IHP:214 
+Glucokinase  ,P35557 ,3H1V:X ,3H1V:X:GLC:500 ,3H1V:X:TK1:501 
+Isocitrate dehydrogenase [NADP] cytoplasmic ,O75874 ,3INM:A ,3INM:A:AKG:511 ,4UMX:A:VVS:1415; 6BKY:A:K32:502 
+Mitogen-activated protein kinase 14  ,Q16539 ,3KF7:A ,3KF7:A:L9G:401 ,4E6C:A:0O8:500 
+Methionine--tRNA ligase ,Q4QCD2 ,3KFL:A ,3KFL:A:ME8:801 ,6SWX:A:LWN:801 
+,,,,
+Glutamate receptor 3 ,P19492,3LSX:A,3LSX:A:GLU:400,3LSX:A:PZI:802
+Glutamate receptor 3  ,P19492,3M3F:A,3M3F:A:GLU:400 ,3M3F:A:P99:800
+Pyruvate kinase PKM  ,P11974,3N25:A,3N25:A:PYR:1000,3N25:A:PRO:1200
+Phospho-2-dehydro-3deoxyheptonate aldolase AroG  ,O53512 ,3NV8:A ,3NV8:A:PEP:467 ,3KGF:B:PHE:4188; 
+,,,,3KGF:B:PHE:9001; 
+,,,,3KGF:B:TRP:9004 
+Ribonucleotide reductase ,O33839 ,3O0O:B ,3O0O:B:GDP:1003 ,1XJF:B:DTP:1001 
+UDP-glucose 6-dehydrogenase ,A0A0J9W ZA6 ,3PJG:A ,3PJG:A:UGA:901 ,3PJG:A:UGA:902 
+Tyrosine-protein kinase ABL1  ,P00519 ,3PYY:A ,3PYY:A:STI:3 ,3PYY:A:3YY:538 
+Poly [ADP-ribose] polymerase 14 ,Q460N5 ,5O2D:A ,3Q6Z:A:APR:1 ,5O2D:A:9HH:1201 
+N-acetylglutamate kinase / Nacetylglutamate synthase  ,Q0ASS9 ,3S6H:A ,3S6H:A:GLU:501 ,4KZT:A:ARG:501 
+"Glutaminase kidney isoform, mitochondrial  ",D3Z7P3 ,4JKT:AD ,3SS5:D:GLU:1 ,4JKT:D:04A:701 
+FLAVIVIRUS_NS2B/Peptidase S7 ,Q91H74 ,3U1I:CDE ,3U1I:E:ARG:4; 3U1I:E:OAR:5 ,6MO0:A:JVJ:1201 
+"Glutaminase kidney isoform, mitochondrial  ",O94925 ,3UO9:A ,3UO9:A:GLU:600 ,3UO9:B:04A:2 
+FARNESYL PYROPHOSPHATE SYNTHASE ,Q9HWY4 ,3ZOU:A ,3ZOU:A:GPP:1297 ,3ZOU:A:6H6:1299 
+Acetylglutamate kinase  ,Q01217 ,3ZZH:C ,3ZZH:C:NLG:1361 ,3ZZH:C:ARG:1362 
+Acetyltransferase Pat  ,O05581 ,4AVC:A ,4AVC:A:ACO:1334 ,4AVC:A:CMP:400 
+Gag-Pol polyprotein  ,P12497 ,4BDZ:AB ,4BDZ:A:19C:1382 ,4AHS:A:AKH:1216 
+Deoxynucleoside triphosphate triphosphohydrolase SAMHD1  ,Q9Y3Z3 ,4BZB:A ,4BZB:A:DGT:700 ,4BZB:A:DGT:800; 4BZB:A:DGT:900 
+ANAEROBIC RIBONUCLEOSIDETRIPHOSPHATE REDUCTASE ,Q9WYL6 ,4COJ:A ,4COJ:A:CTP:653 ,4COJ:A:DTP:654; 4COJ:B:DTP:654 
+5'-AMP-activated protein kinase subunit gamma-1  ,P80385 ,4EAJ:C ,4EAJ:C:ATP:401 ,4EAJ:C:AMP:403 
+RAC-alpha serine/threonine-protein kinase  ,P31749 ,4EKK:BD ,4EKK:B:ANP:501 ,3O96:A:IQO:444 
+Glucose-1-phosphate thymidylyltransferase  ,Q9AGY4 ,4HO6:A ,4HO6:A:UPG:300 ,4HO6:A:UTP:301 
+Caspase-6  ,P55212 ,4NBN:AB ,4HVA:A:4HV:401 ,4NBN:B:2J7:401 
+Pyruvate kinase 1  ,P30615 ,4HYV:B ,4HYV:B:PEP:1003 ,4HYW:A:FDP:503 
+Mitogen-activated protein kinase 7 ,Q13164 ,4IC7:A ,4IC7:A:ANP:501 ,4ZSG:A:4QX:406 
+Citrate synthase  ,P0ABH7 ,4JAG:A ,4JAG:A:OAA:501 ,4JAF:A:NAI:503 
+Aspartate carbamoyltransferase regulatory chain ,N.A. ,4KH0:AB ,4KH0:A:PAL:401 ,4KH1:B:CTP:202; 
+,,,,4KH1:B:UTP:203; 
+,,,,4KH1:B:MG:204 
+Pyruvate kinase(Trypanosoma cruzi) ,Q4D9Z4 ,4KS0:A ,4KS0:A:MG:1001; ,4KS0:A:FDP:1004
+,,,4KS0:A:OXL:1003 ,
+Muscarinic acetylcholine receptor M2,P08172 ,4MQS:A ,4MQS:A:IXO:501 ,4MQT:A:2CU:502 
+Glutamate receptor 2 ,P19491,4N07:A,4N07:A:GLU:302,4N07:A:2J9:301
+Nuclear receptor ROR-gamma ,P51449,4NB6:A,4NB6:A:444:501 ,5C4T:A:4Y6:601
+Putative cellulose synthase ,Q3J125,4P00:A,4P00:A:UDP:918,4P00:A:C2E:919;
+,,,,4P00:A:C2E:920 
+Deoxycytidylate deaminase ,H6WFU3 ,4P9D:A ,4P9D:A:TMP:204 ,4P9D:A:TTP:203 
+Cystathionine beta-synthase ,P35520 ,4PCU:A ,4PCU:A:PLP:602 ,4UUU:A:SAM:1546 
+ATP-dependent 6phosphofructokinase  ,P00512 ,4PFK:A ,4PFK:A:ADP:324 ,4PFK:A:ADP:326 
+Phospho-2-dehydro-3deoxyheptonate aldolase ,Q9K169 ,4UMB:A ,4UMB:A:0V5:1353 ,4UC5:A:PHE:1354 
+"ATP-dependent 6phosphofructokinase, platelet type ",Q01813 ,4XZ2:B ,4XZ2:B:ADP:801 ,4XZ2:B:FBP:802 
+ATP phosphoribosyltransferase ,Q5HSJ4 ,4YB5:ADE ,4YB7:B:ATP:303 ,4YB5:A:HIS:304; 
+,,,,4YB5:D:HIS:302; 
+,,,,4YB5:E:HIS:303 
+3-phosphoinositide-dependent protein kinase 1 ,O15530 ,5ACK:A ,5ACK:A:ATP:500 ,5ACK:A:SVQ:600 
+Neuronal acetylcholine receptor subunit alpha-7 ,P36544 ,5AFJ:ABCDE ,5AFJ:A:L0B:1207 ,5AFJ:D:42R:1206; 
+,,,,5AFJ:E:42R:1206; 
+,,,,5AFJ:A:42R:1206; 
+,,,,5AFJ:B:42R:1206; 
+,,,,5AFJ:C:42R:1206; 
+,,,,5AFK:A:5VU:1207; 
+,,,,5AFK:C:5VU:1208; 
+,,,,5AFK:D:5VU:1206; 
+,,,,5AFK:E:5VU:1207; 
+,,,,5AFK:E:5VU:1208; 
+,,,,5AFN:E:OJD:1215; 
+,,,,5AFN:A:OJD:1215; 
+,,,,5AFN:B:OJD:1217; 
+,,,,5AFN:C:OJD:1215; 
+,,,,5AFN:D:OJD:1215 
+Inosine-5'-monophosphate dehydrogenase ,Q9HXM5 ,4DQW:A ,5AHN:A:IMP:1468 ,4DQW:A:ATP:501 
+Ribonucleoside-diphosphate reductase 1 subunit alpha ,P00452 ,5CNS:A ,5CNS:A:CDP:801 ,5CNS:A:DAT:802 
+"Carbamoyl-phosphate synthase [ammonia], mitochondrial ",P31327 ,5DOU:A ,5DOU:A:ADP:2008; 5DOU:A:ADP:2009 ,5DOU:A:NLG:2010; 6UEL:A:Q5A:1602 
+Calcium-Sensing Receptor ,N.A. ,7DD5:A ,5FBK:A:TCR:601 ,7DD5:A:YP1:1109; 7E6T:A:CA:903 
+Transitional endoplasmic reticulum ATPase,P55072 ,5FTJ:A ,5FTJ:A:ADP:807 ,5FTJ:A:OJA:1001 
+Glutamate receptor  1 ,Q05586 ,5H8Q:AB ,5H8Q:A:GLU:302 ,5H8Q:B:5YE:302 
+Chorismate Mutase ,Q8NNL5  ,5HUD:AG ,5HUD:G:TSA:111 ,5HUD:A:TRP:509 
+Pyruvate dehydrogenase kinase isozyme 2 ,Q15119 ,5J6A:A ,5J6A:A:P46:501 ,2BU6:A:TF2:1386; 
+,,,,2BU7:A:TF3:1386; 
+,,,,2BU8:A:TF4:1379 
+Type II NADH:ubiquinone oxidoreductase ,Q8I302 ,5JWC:A ,5JWC:A:FAD:601 ,5JWC:A:4W0:609; 
+,,,,5JWC:A:4W0:610; 
+,,,,5JWC:A:4W0:611 
+k-ras gtpase ,P01116 ,5KYK:A ,5KYK:A:6ZD:201 ,4LUC:A:20G:203 
+"Glutamate receptor ionotropic, kainate 1 ",P22756 ,5MFQ:AB ,5MFQ:A:KAI:903 ,5MFQ:A:2J9:901; 5MFQ:A:2J9:902 
+Cell division protein FtsZ,P0A031,5MN5:B,6YD5:A:GDP:401,6YD5:A:OM8:404
+Tyrosine-protein kinase ABL1 ,P00519,5MO4:A,5MO4:A:NIL:601 ,5MO4:A:AY7:602
+Myosin-7 ,P12883,4PA0:A,5N6A:A:PHE:901,4PA0:A:2OW:1101; 5N69:A:2OW:904 
+FBP protein ,O97193 ,5OFU:A ,5OFU:A:F6P:402 ,5OFU:A:AMP:401 
+Aurora kinase A ,O14965 ,5OS5:A ,5OS5:A:ADP:401 ,5OS5:A:A8K:404 
+Aurora kinase A ,O14965 ,5OSF:A ,5OSF:A:ADP:401 ,5OSF:A:A9E:404 
+Humanized alpha-AChBP ,N.A. ,5OUG:A ,5OUG:A:L0B:1101 ,5OUG:A:9Z0:1104; 5OUG:A:9Z0:1105 
+Tryptophan synthase beta chain  ,P9WFX9 ,5TCJ:AB ,5TCJ:B:P1T:501 ,5TCJ:B:79V:505 
+HIV-1 reverse transcriptase ,P03366 ,5UV5:A ,5UV5:A:Y55:603 ,4KKO:A:1RE:601; 
+,,,,4KFB:A:1QP:601; 
+,,,,4IG3:A:J94:609 
+Phospho-2-dehydro-3deoxyheptonate aldolase ,Q9I000 ,5UXM:A ,5UXM:A:PEP:501 ,5UXM:A:TRP:502 
+PopP2 protein ,A0A0S4V B05 ,5W3X:A ,5W3X:A:ACO:502 ,5W3X:A:IHP:501 
+Pyruvate kinase ,P9WKE5 ,5WSB:A ,5WSB:A:OXL:504 ,5WSB:A:AMP:501; 5WSB:A:G6P:502 
+Beta-2 adrenergic receptor ,P07550  ,5X7D:A ,5X7D:A:CAU:1206 ,5X7D:A:8VS:1205; 6N48:A:KBY:1403 
+Kynurenine 3-monooxygenase ,Q84HF5 ,5Y66:A ,5Y66:A:KYN:503 ,5Y66:A:7ZR:502 
+ATP phosphoribosyltransferase catalytic subunit ,G7JFL4 ,6CZM:ABC ,6CZM:A:AMP:401 ,6CZM:A:HIS:402; 
+,,,,6CZM:B:HIS:402; 
+,,,,6CZM:C:HIS:402 
+"Glycogen phosphorylase, muscle form  ",P00489 ,6F3L:A ,6F3L:A:PLP:901; ,3E3N:A:AMP:843; 
+,,,6F3L:A:CJW:902 ,3BCR:A:AZZ:940; 
+,,,,4MRA:A:QUE:901 
+Dual specificity mitogen-activated protein kinase kinase 7 ,O14733 ,6YZ4:A ,6IB2:A:862:501 ,6YZ4:A:1E8:514 
+Guanosine 5'-monophosphate Reductase , Q57ZS7 ,6JIG:A ,6JIG:A:5GP:601 ,6LK4:A:GTP:601 
+Protein arginine N-methyltransferase 5,O14744 ,6UXY:A ,6K1S:A:CUX:700 ,6UXY:A:QKY:701 
+Cannabinoid receptor 1 ,P21554 ,6KQI:A ,6KQI:A:9GF:1201 ,6KQI:A:9GL:1202 
+Arachidonate 5-lipoxygenase ,P09917 ,6N2W:B ,6N2W:B:30Z:702 ,6NCF:B:AF7:702 
+Deoxyhypusine synthase ,P49366 ,6P4V:A ,6P4V:A:NAD:501 ,6P4V:A:GC7:502 
+ATP phosphoribosyltransferase regulatory subunit ,Q4FTX3 ,6R02:AG ,6R02:G:PRP:301 ,6R02:A:HIS:401 
+"IMP-specific 5'-nucleotidase, putative ",A0A144A134,6RME:A ,6RME:A:IMP:501 ,6RMD:D:ATP:501 
+"Guanosine-3',5'-bis(Diphosphate) 3'pyrophosphohydrolase ",Q5SHL3 ,6S2U:A ,6S2U:A:AMP:402 ,6S2U:A:GN3:403 
+L-lactate dehydrogenase A chain ,P00338 ,6SBU:AB ,6SBU:A:NAI:1002 ,6SBV:A:L5K:1001; 6SBV:B:L5K:1001
+3-oxoacyl-[acyl-carrier-protein] reductase ,V5VHN7 ,6T65:CD ,6T62:A:NAP:301 ,6T65:C:MLH:301 
+Coenzyme A biosynthesis bifunctional protein ,A0QWT2,6THC:B,6TGV:B:CTP:501,6THC:B:N9N:503
+Gamma-aminobutyric acid receptor subunit beta-2 ,P47870 ,6X3Z:A ,6X3Z:A:ABU:405 ,6X3X:A:DZP:406 
+SUMO-activating enzyme subunit 1 ,Q9UBE0 ,6CWY:D ,6XOG:C:VAY:201 ,6CWY:D:FHJ:707 
+Galactokinase ,P51570 ,6ZFH:A ,6ZFH:A:QV2:402 ,6ZGX:D:S6V:401 
+High affinity nerve growth factor receptor ,P04629 ,6D20:A ,6D20:A:FQD:801 ,6D20:A:FQG:802 
+Replicase polyprotein 1ab ,P0DTD1 ,7AXM:A ,7AKU:A:RN2:401 ,7AGA:A:LZE:401; 7AXM:A:93J:502 
+Histone-lysine N-methyltransferase ,Q9H7B4 ,7O2B:A ,7O2B:A:UZQ:1001 ,6YUH:A:POW:503 

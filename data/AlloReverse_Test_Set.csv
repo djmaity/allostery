@@ -1,0 +1,81 @@
+﻿Name of Protein,Uniprot ID ,PDB ID (PDB:Chain(s)) ,Orthosteric Ligand (PDB:Chain:Residue Name: Residue ID) ,Allosteric Ligand(s) (PDB:Chain:Residue Name: Residue ID) 
+Seminal ribonuclease  ,P00669 ,11BG:A ,11BG:A:U2G:130 ,11BG:A:U2G:131 
+Transforming protein  ,P61586 ,1A2B:A ,1A2B:A:GSP:538 ,6KX3:A:8ZO:202 
+Cyclin-dependent kinase 2  ,P24941 ,1B38:A ,1B38:A:ATP:381 ,3PXF:A:2AN:304; 
+,,,,3PXF:A:2AN:305; 
+,,,,6Q4D:A:HHT:302; 
+,,,,6Q4D:A:HHT:303 
+Hexokinase-1  ,P19367 ,1DGK:N ,1DGK:N:ADP:922 ,1HKB:A:G6P:919 
+Glucose-1-phosphate thymidylyltransferase  ,Q9HU22 ,1G3L:A ,1G3L:A:TRH:500 ,1G3L:A:TRH:501 
+Matrix metalloproteinase-9 ,P14780 ,5UE4:B ,1GKD:A:STN:1448; 1GKD:A:BUM:1449 ,5UE4:B:5XQ:307 
+"NAD-dependent malic enzyme, mitochondrial  ",P23368 ,1GZ3:A ,1GZ3:A:ATP:601 ,1GZ3:A:FUM:605 
+Leukotriene A-4 hydrolase  ,P09960 ,1HS6:A ,1HS6:A:BES:901 ,3FUD:A:692:710 
+Anthranilate synthase component 1  ,P00898 ,1I7Q:A ,1I7Q:A:BEZ:1501 ,1I1Q:A:TRP:1001 
+"Phospho-2-dehydro-3deoxyheptonate aldolase, Phe-sensitive  ",P0AB91 ,1KFL:A ,1KFL:A:PEP:1352 ,1OF6:A:DTY:1370 
+L-lactate dehydrogenase 2  ,E8ME30 ,1LTH:R ,1LTH:R:NAD:321 ,1LTH:R:FBP:320 
+Ornithine decarboxylase  ,Q9TZZ6 ,1NJJ:A ,1NJJ:A:ORX:602 ,1NJJ:A:GET:601 
+ATP-dependent 6phosphofructokinase isozyme ,P0A796 ,1PFK:A ,1PFK:A:ADP:324 ,1PFK:A:ADP:326 
+1,,,,
+Prothrombin  ,P00735 ,3PMA:CD ,1SHH:B:0G6:301 ,3PMA:F:GU4:1; 3PMA:F:YYJ:2 
+NAD(P)-dependent glyceraldehyde-3-phosphate dehydrogenase ,O57693 ,1UXV:A ,1UXV:A:NAP:1502 ,1UXV:A:AMP:1503 
+Uracil phosphoribosyltransferase  ,Q980Q4 ,1XTU:A ,1XTU:A:U5P:1250 ,1XTU:A:CTP:1260 
+"Glycogen phosphorylase, muscle form  ",P11217 ,1Z8D:A ,1Z8D:A:GLC:901,1Z8D:A:AMP:900;
+,,,,1Z8D:A:ADE:902 
+Cathepsin K ,P43235 ,5J94:A ,1U9W:A:IHI:300 ,5J94:A:1XF:301 
+Uridylate kinase  ,P0A7E9 ,2V4Y:ABCDEF ,2BNF:A:UTP:1242 ,2V4Y:A:GTP:1242; 
+,,,,2V4Y:B:GTP:1242; 
+,,,,2V4Y:C:GTP:1242; 
+,,,,2V4Y:D:GTP:1242; 
+,,,,2V4Y:E:GTP:1242; 
+,,,,2V4Y:F:GTP:1242 
+Glutamate racemase  ,P22634 ,2JFZ:A ,2JFZ:A:DGL:1257 ,2JFZ:A:003:1256; 
+,,,,2JFN:A:UMA:1286 
+L-lactate dehydrogenase  ,P00344 ,2LDB:D ,2LDB:D:NAD:13 ,2LDB:D:FBP:2 
+D-3-phosphoglycerate dehydrogenase  ,P0A9T0 ,2PA3:A ,2PA3:A:NAI:450 ,2PA3:A:SER:451 
+"Glycogen phosphorylase, liver form  ",P06737 ,2SKC:A ,2SKC:A:GLC:998; 2SKC:A:PLP:999 ,3CEH:A:AVE:833; 
+,,,,1EM6:A:CP4:862; 
+,,,,3DD1:A:CFF:903 
+Androgen receptor  ,P10275 ,2YLO:A ,2YLO:A:TES:1920 ,2YLO:A:YLO:1922 
+"UDP-N-acetylglucosamine pyrophosphorylase, putative  ",Q386Q8 ,2YQS:A ,2YQS:A:UD1:1001 ,4BQH:A:9VU:1539 
+Probable aspartokinase  ,Q57991 ,3C1N:AB ,3C1M:A:ANP:472 ,3C1N:A:THR:471; 3C1N:B:THR:470 
+Amino-acid acetyltransferase  ,Q5FAK7 ,3D2P:A ,3D2P:A:COA:437 ,3D2P:A:ARG:438 
+Isocitrate dehydrogenase kinase/phosphatase  ,Q8X607 ,3EPS:A ,3EPS:A:ATP:1605 ,3EPS:A:AMP:1604 
+Pyruvate kinase  ,Q27686 ,3HQP:A ,3HQP:A:ATP:1001 ,3HQP:A:FDP:700 
+4-hydroxytetrahydrodipicolinate synthase  ,P0A6L2 ,2ATS:AB ,3I7S:A:PYR:298 ,2ATS:A:DLY:3003 
+HD domain protein  ,Q836G9 ,3IRH:AB ,3IRH:B:DTP:459 ,3IRH:A:DGT:458; 
+,,,,3IRH:B:DGT:458; 
+,,,,4LRL:B:TTP:503 
+Tyrosine-protein kinase Abl1 ,P00520 ,3K5V:A ,3K5V:A:STI:2 ,3K5V:A:STJ:1 
+Glutamate receptor 2  ,P19491 ,3LSF:B ,3LSF:B:GLU:400 ,3LSF:B:PZI:802; 3LSF:E:PZI:802 
+Toxin B  ,Q189K3 ,3PA8:A ,3PA8:A:621:300 ,3PA8:A:IHP:257 
+Serine/threonine-protein kinase PAK 1 ,Q13153 ,3Q4Z:A ,3Q4Z:A:ANP:800 ,4ZLO:A:4PV:601 
+Glutamate receptor 2  ,P42262 ,3RNN:A ,3RNN:A:GLU:281 ,3RNN:A:RNN:280 
+Ribonucleoside-diphosphate reductase large chain 1  ,P21524 ,5IM3:A ,3S87:A:ADP:1002 ,3S87:A:DGT:1001; 5IM3:A:DTP:1002 
+Penicillin binding protein 2 prime ,A0A0H3J PA5 ,3ZFZ:A ,3ZFZ:A:AI8:1403 ,3ZFZ:A:1W8:1669; 3ZFZ:A:MUR:1670 
+GTPase HRas  ,P01112 ,4DLR:A ,4DLR:A:GNP:208 ,4DLR:A:DTU:203 
+"Isocitrate dehydrogenase [NADP], mitochondrial  ",P48735 ,4JA8:AB ,4JA8:A:NDP:501 ,4JA8:A:1K9:502 
+U5 small nuclear ribonucleoprotein 200 kDa ,O75643 ,4KIT:B ,4KIT:B:ADP:2201 ,5URJ:A:8LS:2202 
+helicase ,,,,
+Ribonucleoside-diphosphate reductase large subunit  ,P23921  ,4R1R:ADP ,4R1R:A:GDP:763,3HNC:A:TTP:802;
+,,,,3R1R:A:ATP:762 
+TDP-3-aminoquinovose-Nformyltransferase ,F8RC03 ,4XCZ:A ,4XCZ:A:FON:401 ,4XCZ:A:T3Q:403 
+P2Y purinoceptor 1 ,P47900 ,4XNW:A ,4XNW:A:2ID:1101 ,4XNV:A:BUR:1101 
+Inosine-5'-monophosphate dehydrogenase ,Q756Z6 ,5TC3:A ,4XTI:A:IMP:601 ,5TC3:A:ATP:601; 
+,,,,5TC3:A:GDP:602; 
+,,,,5TC3:A:GDP:603 
+Bifunctional UDP-N-,Q9Y223 ,4ZHT:A ,4ZHT:A:UDP:501 ,4ZHT:A:NCC:502 
+acetylglucosamine 2epimerase/N-,,,,
+acetylmannosamine kinase ,,,,
+"GDP-mannose 4,6 dehydratase ",O60547 ,5IN4:A ,5IN4:A:GDP:1002 ,5IN4:A:6CK:1003 
+"Fructose-1,6-bisphosphatase isozyme 2  ",O00757 ,3IFA:A ,5K56:A:FBP:401 ,3IFA:A:AMP:339 
+Inorganic pyrophosphatase ,P9WI55 ,5KDF:A ,5KDF:A:POP:205 ,5KDF:A:6RU:201 
+Glucose-1-phosphate adenylyltransferase ,P0A6V1 ,5L6V:A ,5L6V:Q:GLC:1; 5L6V:Q:FRU:2 ,5L6V:A:AMP:501; 
+,,,,5W5R:A:PYR:503 
+Myosin-11 ,P10587 ,5M05:A ,5M05:A:ADP:903 ,5M05:A:52E:901 
+CC chemokine receptor type 2 isoform B ,P41597 ,5T1A:A ,5T1A:A:73R:1201 ,5T1A:A:VT5:1202 
+Chimera of G-protein coupled receptor 52 and Flavodoxin ,Q9Y2T5 ,6LI1:A ,6LI1:A:FMN:1202 ,6LI0:A:EN6:1401 
+2-succinyl-5-enolpyruvyl-6hydroxy-3-cyclohexene-1carboxylate synthase ,P9WK11 ,6O0J:C ,6O0J:C:TPP:604 ,6O0J:C:DNA:601 
+Histone acetyltransferase p300 ,Q09472 ,6PGU:A ,6PGU:A:COA:1701 ,6PGU:A:OK7:1702 
+G-protein coupled bile acid receptor 1 ,Q8TDU6 ,7CFN:R ,7CFN:R:FX0:403 ,7CFN:R:FX0:401 
+D(1A) dopamine receptor ,P21728 ,7LJC:R ,7LJC:R:SK0:501 ,7LJC:R:G4C:502 
+"4-hydroxytetrahydrodipicolinate synthase 1, chloroplastic ",Q9LZX6 ,7MDS:A ,7MDS:A:YXP:501 ,6VVH:A:LYS:401 
