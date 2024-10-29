@@ -1,6 +1,11 @@
 This repository contains the pipeline to create dataset of proteins with known allosteric and active sites
 
-The code is in the notebooks directry and contains 4 Jupyter Python Notebooks. The Python packages used in the notebooks must be installed to succesfully run the notebooks. It is hihgly recommended to create a virtual environment with Anaconda or Miniconda. If not already intalled, install Anaconda/Miniconda following the instllation instructions at [].
+The code is in the notebooks directry and contains 4 Jupyter Python Notebooks. The Python packages used in the notebooks must be installed to succesfully run the notebooks. It is hihgly recommended to create a virtual environment with Anaconda or Miniconda. If not already intalled, install Anaconda or Miniconda following the instructions at https://docs.anaconda.com/anaconda/install/ and https://docs.anaconda.com/miniconda/miniconda-install/, respectively. Create the virtual environment with:
+
+conda create -n allostery
+conda activate allostery
+conda install jupyterlab numpy pandas tqdm xmltodict 
+pip install SPARQLWrapper
 
 The nootbooks require an internet connection to automatically obtain the required data in many of its cells. The output is written to the output directory of the repository. The input and output locations can be customized in the notebooks. Please refer to the text cells in each notebook for further instructions. 
 
@@ -8,7 +13,7 @@ The nootbooks require an internet connection to automatically obtain the require
 Cleans the data from AlloSteric Database (ASD) and fetches the active site information from UniProt and Mechanism and Catalytic Site Atlas (M-CSA).
 The final output of this notebook can be split into training, validation and test set for developing AI methods for allosteric site prediction.
 
-Download the ASD_Release_202306_XF.tar.gz archive from https://mdl.shsmu.edu.cn/ASD/module/download/download.jsp?tabIndex=1 and extract it in the data directory of this repository before running the notbook.
+Download the ASD_Release_202306_XF.tar.gz archive from https://mdl.shsmu.edu.cn/ASD/module/download/download.jsp?tabIndex=1 and extract it in the data directory of this repository before running the notbook so that the path is data/ASD_Release_202306_XF contain XML files
 
 ## 02_Compare_Training_Sets_of_Exisiting_Allosteric_Site_Prediction_Tools.ipynb
 Identifies the UniProt and PDB IDs of the proteins in the training sets of existing allosteric site prediction tools.
