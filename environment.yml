@@ -1,0 +1,20 @@
+# This file can be used to create a conda virtual environment for this repository
+# and install the necessary dependencies. Use the following command:
+#
+#     conda env create --file=environment.yml
+
+name: allostery
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - biopython >= 1.79
+  - jupyterlab
+  - numpy
+  - pandas
+  - pip
+  - tqdm
+  - xmltodict
+  - pip:
+    - SPARQLWrapper
+    - matplotlib-venn

@@ -1,0 +1,8 @@
+jupyterlab
+numpy
+matplotlib-venn
+pandas
+tqdm
+xmltodict
+SPARQLWrapper
+biopython >= 1.79

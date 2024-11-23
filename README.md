@@ -4,8 +4,11 @@ The code is in the notebooks directry and contains 4 Jupyter Python Notebooks. T
 
 conda create -n allostery
 conda activate allostery
-conda install jupyterlab numpy pandas tqdm xmltodict 
-pip install SPARQLWrapper
+
+conda install --yes --file requirements.txt
+
+conda install pip
+pip install -r requirements.txt
 
 The nootbooks require an internet connection to automatically obtain the required data in many of its cells. The output is written to the output directory of the repository. The input and output locations can be customized in the notebooks. Please refer to the text cells in each notebook for further instructions. 
 
