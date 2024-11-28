@@ -10,6 +10,7 @@ channels:
 dependencies:
   - biopython >= 1.79
   - jupyterlab
+  - more-itertools
   - numpy
   - pandas
   - pip

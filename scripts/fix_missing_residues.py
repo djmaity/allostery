@@ -1,17 +1,26 @@
 #!/usr/bin/env python3
 
+import collections
+import glob
 import json
 import os
-import subprocess
-import warnings
 import shutil
 import string
+import subprocess
+import warnings
 
 # Import biopython subpackages
 import Bio
 import Bio.Align
 import Bio.PDB
 import Bio.SeqIO
+import pandas as pd
+from tqdm.contrib.concurrent import process_map
+
+
+def make_directory(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
 
 def find_missing(array):
@@ -24,36 +33,65 @@ def find_missing(array):
         return missing
 
 
-def parse_structure(pdb_file)
+def parse_structure(pdb_file):
     pdb_id, extension = os.path.splitext(os.path.basename(pdb_file))
     if extension == '.pdb':
         parser = Bio.PDB.PDBParser(QUIET=True)
     if extension == '.cif':
         parser = Bio.PDB.MMCIFParser(QUIET=True)
-    reutrn parser.get_structure('structure', pdb_file)
+    return parser.get_structure('pdb_id', pdb_file)
 
 
-def fix_num_models(pdb_file)
-    pdb_data = parse_structure(pdb_file)
-    # get the numer of models in the PDB file. 
-    num_models = len(pdb_data.child_list)
+def merge_models(pdb_file, output_file):
+    """ Provide structure file path """
+    # Read the PDB or mmCIF file
+    structure = parse_structure(pdb_file)
+    
+    seqres_records = collections.defaultdict(list)
+    with open(pdb_file, 'r') as in_file:
+        for line in in_file:
+            if line.startswith('SEQRES'):
+                chain = line[11]
+                seqres_records[chain].append(line)
 
-    # if num_models > 1:
-        
-    chain_index = 0
-    for model in pdb_data:
+    seqres_output = ''
+    index = 0
+    for model in structure:
         for chain in model:
-            print(string.ascii_uppercase[chain_index])
-                
+            old_chain_name = chain.get_id()
+            new_chain_name = string.ascii_uppercase[index]
+            chain.id = new_chain_name
+
+            # Add a SEQRES record for the chain
+            for seqres in seqres_records[old_chain_name]:
+                seqres_output += seqres[:11] + new_chain_name + seqres[12:]
+
+            if model.get_id() != 0:
+                chain.detach_parent()
+                structure[0].add(chain)
+            index += 1
+
+    # Write the modified PDB file
+    io = Bio.PDB.PDBIO()
+    io.set_structure(structure)
+    io.save(output_file)
+    
+    # Add the SEQRES records to the modified PDB file
+    with open(output_file, 'r+') as out_file:
+        content = out_file.read()
+        out_file.seek(0, 0)
+        out_file.write(seqres_output.rstrip('\r\n') + '\n' + content)
 
 
 def check_missing_residues(pdb_file):
-
-    pdb_data = parse_structure(pdb_file)
+    """ Provide biopython PDB structure Bio.PDB.PDBParser or Bio.PDB.MMCIFParser
+    """
+    # Read the PDB or mmCIF file
+    structure = parse_structure(pdb_file)
 
     has_missing_residues = False
-    missing_residues_list = []
-    for model in pdb_data:
+    list_missing_residues = []
+    for model in structure:
         for chain in model:
             residue_id_list = []
             for residue in chain:
@@ -67,34 +105,30 @@ def check_missing_residues(pdb_file):
                         # Check at least C-alpha atom for the residue is present
                         if {'CA'}.issubset(atom_names):
                             residue_id_list.append(residue.get_id()[1])
-
-                    # else:
-                    #     print(pdb_id, chain.get_id(),
-                    #           residue.get_id(), residue.get_resname())
-
             missing_residues = find_missing(residue_id_list)
-            missing_residues_list.append([model.get_id(), chain.get_id(),
+            list_missing_residues.append([model.get_id(), chain.get_id(),
                                           missing_residues])
 
             if missing_residues and len(missing_residues) > 0:
                 has_missing_residues = True
 
-    return pdb_id, has_missing_residues, missing_residues_list
-
+    return has_missing_residues, list_missing_residues
+    
 
 def get_sequence(pdb_file, format):
     """Get the amino acid sequence from the the SEQRES records or order
     of atoms in the PDB file """
 
-    if format not in {"pdb-seqres", "pdb-atom"}:
-        raise ValueError('format must be pdb-seqres or pdb-atom')
+    name, ext = os.path.splitext(os.path.basename(pdb_file))
     
+    if format not in {"seqres", "atom"}:
+        raise ValueError("format must be 'seqres' or 'atom'")
 
     with warnings.catch_warnings():
         warnings.simplefilter('ignore', Bio.BiopythonWarning)
         
         sequence = {}
-        for chain in Bio.SeqIO.parse(pdb_file, format):
+        for chain in Bio.SeqIO.parse(pdb_file, format=f'{ext[1:]}-{format}'):
             sequence[chain.annotations['chain']] = chain.seq.replace('X', '')
         return sequence
 
@@ -113,13 +147,13 @@ def align_pdb_sequences(pdb_file, alignment_file):
         query_end_gap_score = 0.0
         )
 
-    seqres_sequence = get_sequence(pdb_file, "pdb-seqres")
-    atomic_sequence = get_sequence(pdb_file, "pdb-atom")
+    seqres_sequence = get_sequence(pdb_file, "seqres")
+    atomic_sequence = get_sequence(pdb_file, "atom")
     
-    print(seqres_sequence.keys() == atomic_sequence.keys(), seqres_sequence.keys(), atomic_sequence.keys())
+    print(name, seqres_sequence.keys() == atomic_sequence.keys(), seqres_sequence.keys(), atomic_sequence.keys())
 
     alignment_list = []
-    for chain in sorted(seqres_sequence.keys()):
+    for chain in sorted(atomic_sequence.keys()):
         target, template = aligner.align(seqres_sequence[chain], atomic_sequence[chain])[0]
         alignment_list.append({
             'target': {'name': 'mytrg', 'seqres': target},
@@ -130,48 +164,62 @@ def align_pdb_sequences(pdb_file, alignment_file):
     json.dump(json_data, open(alignment_file, 'w'), indent=4)
 
 
-def model_structure(pdb_file, output_dir='../output/modeled_structures'):
+def model_structure(pdb_file, output_dir='./'):
     """ Model the structure with missing residues using ProMod3
     https://openstructure.org/promod3/3.4/ """
 
     name = os.path.splitext(os.path.basename(pdb_file))[0]
-
+    
     alignment_file = os.path.join(output_dir, f'{name}_alignment.json')
     align_pdb_sequences(pdb_file=pdb_file, alignment_file=alignment_file)
-    
+
     shutil.copy(pdb_file, output_dir)
-    output_dir = os.path.abspath(output_dir)
-    subprocess.run(['docker', 'run', '--rm', '-v', f'{output_dir}:/home',
+
+    template_structure = os.path.basename(pdb_file)
+    output_path = os.path.abspath(output_dir)
+    subprocess.run(['docker', 'run', '--rm', '-v', f'{output_path}:/home',
                     'registry.scicore.unibas.ch/schwede/promod3',
                     'build-model', '-j', f'{name}_alignment.json',
-                    '-p', f'{name}.pdb', '-o', f'{name}_model.pdb'
+                    '-p', template_structure, '-o', f'{name}_model.pdb'
                     ])
 
 
+def main(pdb_file):
+    pdb_id = os.path.splitext(os.path.basename(pdb_file))[0]
+    
+    if os.path.exists(f'../output/modeled_structures/{pdb_id}_model.pdb'):
+        return
+    else:
+        try:
+            # Check if multiple models are present in the PDB file.
+            structure = parse_structure(pdb_file)
+
+            has_missing_res, _ = check_missing_residues(pdb_file)
+            
+            num_models = len(structure.child_list)
+            if num_models > 1:
+                input_pdb_file = os.path.join(f'../output/merged_structures/{pdb_id}.pdb')
+                merge_models(
+                    pdb_file, 
+                    output_file=input_pdb_file
+                )
+            else:
+                input_pdb_file = pdb_file
+
+            if has_missing_res:
+                model_structure(input_pdb_file, output_dir='../output/modeled_structures')
+        except:
+            with open('../output/failed_pdbs.txt', 'a') as failed_pdbs:
+                print(pdb_id, file=failed_pdbs)
+
 if __name__ == '__main__':
-    
-    import glob
-    import pandas as pd
-    from tqdm.contrib.concurrent import process_map
+    pdb_structures = sorted(glob.glob('../data/pdb_downloaded/*.pdb')) # +
+                            # glob.glob('../data/pdb_downloaded/*.cif'))
 
-    structures = sorted(glob.glob('../data/pdb_downloaded/*.pdb') +
-                        glob.glob('../data/pdb_downloaded/*.cif'))
+    make_directory('../output/modeled_structures')
+    make_directory('../output/merged_structures')
 
-    missing_residues = process_map(check_missing_residues,
-                                   structures, chunksize=1)
-
-    df_missing_residues = pd.DataFrame(
-        missing_residues, columns=['PDB ID',
-                                   'Has Missing Residues',
-                                   'Missing Residues'])
+    for pdb_structure in pdb_structures:
+        main(pdb_structure)
     
-    # Get the PDB IDs with missing residues
-    pdb_ids = df_missing_residues.loc[
-        df_missing_residues['Has Missing Residues'], 'PDB ID']
-        
-    output_directory = '../output/modeled_structures'
-    if not os.path.exists(output_directory):
-        os.makedirs(output_directory)
-    
-    pdbf_files = [f'../data/pdb_downloaded/{pdb_id}.pdb' for pdb_id in pdb_ids]
-    process_map(model_structure, pdbf_files, max_workers=16, chunksize=1)
+    # main('../data/pdb_downloaded/3bcr.cif')

@@ -162,8 +162,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# Custom
-data/
-
 # MacOS
 .DS_Store
+
+# Data and Output Directories
+data/
+output/
+
